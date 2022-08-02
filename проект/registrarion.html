@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Страница регистрации</title>
+    </head>
+    <body>
+        <form action="" enctype="multipart/form-data" method="post">
+            <div>Введите свою фамилию</div>
+            <input type="str" name="surname">
+
+            <div>Введите своё имя</div>
+            <input type="str" name="name">
+            
+            <div>Введите свой email</div>
+            <input type="str" name="email">
+            <div style="color:#ff0000">{{re_email}}</div>
+
+            <div>Введите свой номер телефона</div>
+            <input type="int" name="phone_number">
+            <div style="color:#ff0000">{{len_phone}}</div>
+
+            <div>Введите ник, который будет использоваться на данном сайте</div>
+            <input type="str" name="nick">
+
+            <div>Придумате пароль</div>
+            <input type="str" name="password">
+            <div style="color:#ff0000">{{len_password}}</div>
+
+            <div>Продублируйте пароль</div>
+            <input type="str" name="password_again">
+            <div style="color:#ff0000">{{error_password}}</div>
+
+            <div>Загрузите фотографию</div>
+            <p>
+                <input type="file" name="photo">
+            </p>
+
+            <br>
+            <div>Как только все поля будут заполнены, нажмите кнопку "Зарегистрироваться"</div>
+
+            <button type="submit">Зарегистрироваться</button>
+            <div style="color:#da0404">{{result}}</div>
+        </form>
+    </body>
+</html>
