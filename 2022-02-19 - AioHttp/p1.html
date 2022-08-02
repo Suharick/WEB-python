@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Список статей</title>
+    </head>
+    <body>
+        <form action="/p2">
+            <button type="submit">Добавить статью</button>
+        </form>
+
+        <ul id="navigation">
+            {% for item in items %}
+                {% if item == [] %}
+                    <li> </li>
+                {% else %}
+                    <li>{{item}}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </body>
+</html>
